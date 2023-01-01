@@ -1,0 +1,64 @@
+//Name:Gurdev singh
+//Id :100376466   
+
+   ------------- choose a command --------------------------
+(i) - input the polynomials f and g
+(a) - add the sparse polynomials f and g, namely, f + g
+(s) - subtract g from f  namely f - g 
+(t) - times or multiply a scalar by f and another scalar by g
+(p) - print the polynomials
+(c) - coefficients of terms when the degree is supplied
+(d) - degree of the polynomials
+(r) - reset or restart the process with two new polynomials
+(g) - get the derivative of the polynomials i.e. differentiate
+(m) - mention or comment, the subsequent line is ignored
+(q) - quit the program altogether
+      ---------------------------------------------------------
+
+command: i      
+For polynomial f, enter # of terms, coeff degree, coeff, degree, ...
+2
+2
+3
+4
+5
+For polynomial g, enter # of terms, coeff degree, coeff, degree, ...
+2
+1
+3
+1
+6
+f = 2*x^3 + 4*x^5
+g = x^3 + x^6
+
+command: a
+f = 2*x^3 + 4*x^5
+g = x^3 + x^6
+f + g = 3*x^3 + 4*x^5 + x^6
+
+command: s
+f = 2*x^3 + 4*x^5
+g = 3*x^3 + x^6
+f - g =  - x^3 + 4*x^5 + x^6
+
+command: t
+enter the constant (scalar) to multiply f by: 3
+enter the constant (scalar) to multiply g by: 3
+f = 3 * f = 6*x^3 + 12*x^5
+g = 3 * g =  - 3*x^3 + 3*x^6
+
+command: p
+f = 6*x^3 + 12*x^5
+g =  - 3*x^3 + 3*x^6
+
+command: c
+Enter the degree of term whose coefficient you want 5
+in f,   12 is the coefficient of the term of degree 5
+in g,   0 is the coefficient of the term of degree 5
+continue getting coefficients? (y/n): g
+
+command: g
+df/dx = 18*x^2 + 60*x^4
+dg/dx =  - 9*x^2 + 18*x^5
+
+command: q
