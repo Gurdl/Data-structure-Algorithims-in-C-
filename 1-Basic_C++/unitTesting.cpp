@@ -12,6 +12,14 @@ TEST_CASE("Special cases")
  CHECK(calculateInflation(2.0,4.0)==100.0);
  CHECK(calculateInflation(2.0,6.0)==200.0);
 }
+TEST_CASE("Special cases")
+{
+//same values before and after the year
+ CHECK(calculateInflation(2.0,2.0)==0.0);
+ //after one year,When  if values slightly changes
+ CHECK(calculateInflation(2.0,4.0)==100.0);
+ CHECK(calculateInflation(2.0,6.0)==200.0);
+}
 TEST_CASE("border  cases")
 {
 /*
