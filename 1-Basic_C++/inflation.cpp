@@ -6,6 +6,7 @@ The two arguments passed in function must not be negative and zero
 //POST-CONDITIION:
 This function will return a double value
 */
+//I just added a new comment here,Hope it will be helpful for you.
 #include<iomanip>
 using namespace std;
 double calculateInflation(double oldPrice,double currentPrice)
